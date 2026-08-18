@@ -1,102 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sergio Jun Aota</title>
-<link rel="icon"
-      type="image/svg+xml"
-      href="favicon.svg">
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body{
-font-family:Arial,sans-serif;
-max-width:1000px;
-margin:auto;
-padding:20px;
-background:#f5f5f5;
-}
+    <meta name="description" content="Portal profissional de Sergio Jun Aota, com conteúdos sobre formação de professores, Tecnologia e Inovação, Programação, Robótica e Inteligência Artificial na Educação.">
+    <meta name="author" content="Sergio Jun Aota">
+    <meta name="theme-color" content="#0066cc">
 
-header{
-text-align:center;
-padding:30px;
-background:#0066cc;
-color:white;
-border-radius:10px;
-}
+    <title>Sergio Jun Aota | Tecnologia e Inovação</title>
 
-section{
-background:white;
-padding:20px;
-margin-top:20px;
-border-radius:10px;
-}
+    <!-- O arquivo favicon.svg deve ficar na mesma pasta do index.html. -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-a{
-color:#0066cc;
-}
-
-</style>
-
+    <!-- Arquivo de estilos externo. -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <a class="link-pular" href="#conteudo-principal">Pular para o conteúdo principal</a>
 
-<header>
+    <header class="cabecalho">
+        <div class="cabecalho-conteudo">
+            <!-- Para adicionar uma foto, retire os comentários abaixo e envie
+                 o arquivo foto-sergio.jpg para uma pasta chamada imagens.
+            <img class="foto-perfil"
+                 src="imagens/foto-sergio.jpg"
+                 alt="Foto de Sergio Jun Aota">
+            -->
 
-<h1>Sergio Jun Aota</h1>
+            <p class="etiqueta">Tecnologia educacional</p>
+            <h1>Sergio Jun Aota</h1>
+            <p class="subtitulo">Professor Especialista em Currículo - Tecnologia</p>
+            <p>Unidade Regional de Ensino de Guaratinguetá</p>
+        </div>
+    </header>
 
-<h3>Professor Especialista em Currículo - Tecnologia</h3>
+    <nav class="menu" aria-label="Navegação principal">
+        <div class="menu-conteudo">
+            <a href="#sobre">Sobre</a>
+            <a href="#atuacao">Áreas de atuação</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </nav>
 
-<p>Unidade Regional de Ensino de Guaratinguetá</p>
+    <main id="conteudo-principal" class="conteudo">
+        <section id="sobre" class="secao">
+            <p class="titulo-menor">Apresentação</p>
+            <h2>Sobre</h2>
+            <p>
+                Atuo na formação e no apoio a professores dos componentes de
+                Tecnologia e Inovação, Programação e Robótica, além de desenvolver
+                iniciativas relacionadas ao uso pedagógico da Inteligência Artificial.
+            </p>
+        </section>
 
-</header>
+        <section id="atuacao" class="secao">
+            <p class="titulo-menor">Conheça meu trabalho</p>
+            <h2>Áreas de atuação</h2>
 
-<section>
+            <div class="grade-cartoes">
+                <article class="cartao">
+                    <div class="icone" aria-hidden="true">📚</div>
+                    <h3>Formação de professores</h3>
+                    <p>Materiais, orientações e recursos de apoio à prática docente.</p>
+                </article>
 
-<h2>Sobre</h2>
+                <article class="cartao">
+                    <div class="icone" aria-hidden="true">💻</div>
+                    <h3>Programação</h3>
+                    <p>Projetos e conteúdos de programação para o Ensino Médio.</p>
+                </article>
 
-<p>
-Atuo na formação de professores dos componentes
-Tecnologia e Inovação, Programação e Robótica.
-</p>
+                <article class="cartao">
+                    <div class="icone" aria-hidden="true">🤖</div>
+                    <h3>Robótica educacional</h3>
+                    <p>Atividades de robótica para escolas do Programa Ensino Integral de 9 horas.</p>
+                </article>
 
-</section>
+                <article class="cartao">
+                    <div class="icone" aria-hidden="true">🧠</div>
+                    <h3>Inteligência Artificial</h3>
+                    <p>Estudos e aplicações da Inteligência Artificial no contexto educacional.</p>
+                </article>
+            </div>
+        </section>
 
-<section>
+        <section id="projetos" class="secao destaque">
+            <div>
+                <p class="titulo-menor">Código e materiais</p>
+                <h2>Projetos no GitHub</h2>
+                <p>
+                    Acesse meus repositórios para conhecer projetos, estudos e materiais
+                    relacionados à tecnologia e à educação.
+                </p>
+            </div>
 
-<h2>Projetos</h2>
+            <a class="botao"
+               href="https://github.com/sergioaota"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Ver os repositórios de Sergio Aota no GitHub, abre em nova aba">
+                Ver meus repositórios
+            </a>
+        </section>
 
-<ul>
+        <section id="contato" class="secao">
+            <p class="titulo-menor">Conexões profissionais</p>
+            <h2>Contato</h2>
+            <p>
+                Para conhecer meu trabalho e acompanhar os projetos, visite meu perfil
+                profissional no GitHub.
+            </p>
+            <p>
+                <a class="link-texto"
+                   href="https://github.com/sergioaota"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Perfil de Sergio Aota no GitHub
+                </a>
+            </p>
+        </section>
+    </main>
 
-<li>Tecnologia e Inovação - Anos Finais do Ensino Fundamental</li>
-
-<li>Programação - Ensino Médio</li>
-
-<li>Robótica nas Escolas do Programa Ensino Integral de 9 horas</li>
-
-<li>Inteligência Artificial na Educação</li>
-
-</ul>
-
-</section>
-
-<section>
-
-<h2>GitHub</h2>
-
-<p>
-
-<a href="https://github.com/sergioaota">
-
-Ver meus repositórios
-
-</a>
-
-</p>
-
-</section>
-
+    <footer class="rodape">
+        <p>&copy; 2026 Sergio Jun Aota. Conteúdo profissional e educacional.</p>
+    </footer>
 </body>
 </html>
-``
